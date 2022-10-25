@@ -17,9 +17,11 @@ const markup = makeMarkup(galleryItems);
 refs.parentDom.insertAdjacentHTML('beforeend', markup);
 
 const lightbox = new SimpleLightbox('.gallery a', {
-  //   overlay: false, // СКРИПТ ПАДАЕТ НА 2ОМ ВЫЗОВЕ
+  // overlay: false, // СКРИПТ ПАДАЕТ НА 2ОМ ВЫЗОВЕ
   captionsData: 'alt',
-  captionsDelay: 250,
+  captionDelay: 250,
+  captionType: 'alt',
+  captionPosition: 'bottom',
   //   captionPosition: 'right',
   overlayOpacity: 0.5,
   //   spinner: false,
